@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Material</title>
+    <script>
+        function playVideo(videoUrl) {
+            document.getElementById("videoFrame").src = videoUrl;
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to Apna College Resources</h1>
+    <p>Explore different coding topics with Apna College videos</p>
+    <hr>
+    <table border="1">
+        <tr>
+            <th>Topics</th>
+            <th>Resource</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>
+                <a href="#" onclick="playVideo('https://www.youtube.com/embed/HcOc7P5BMi4')">Watch</a>
+            </td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>
+                <a href="#" onclick="playVideo('https://www.youtube.com/embed/ESnrn1kAD4E')">Watch</a>
+            </td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>
+                <a href="#" onclick="playVideo('https://www.youtube.com/embed/ajdRvxDWH4w')">Watch</a>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Video Player:</h3>
+    <iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
