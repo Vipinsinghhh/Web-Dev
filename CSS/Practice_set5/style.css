@@ -1,0 +1,10 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-image: url(peter-thomas-aSNweg87-f4-unsplash.jpg);
+    background-size: cover;
+    position: fixed;
+    right: 0%;
+    top: 30%;
+}
+
