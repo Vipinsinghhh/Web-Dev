@@ -1,0 +1,21 @@
+div{
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outer{
+    height: 500px;
+    width: 800px;
+}
+
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+
+
