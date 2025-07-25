@@ -179,6 +179,7 @@ span{
 .nav-cart i {
     font-size: 25px;
 }
+
 .nav-cart{
     font-size: 0.85rem;
     line-height: 15px;
@@ -300,7 +301,7 @@ span{
  footer{
     margin-top: 15px;
  }
- 
+
  .footer-panel1{
     background-color: #37475a;
     height: 50px;
