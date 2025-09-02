@@ -1,4 +1,4 @@
-const tinderUser2 = new Object()  //hum is tarah se bhi object ko create kr skte he
+const tinderUser2 = new Object()  //hum is tarah se bhi object ko create kr skte he, this is called singleton object
 const tinderUser = {}      //is tarah se bhi
 
 tinderUser.id = "123abc"       //insertion of key-value pairs
