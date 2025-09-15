@@ -1,7 +1,7 @@
 // Immediately Invoked Function Expressions (IIFE)
 
 
-function chai(){     //this is named IIFE
+function chai(){     
     console.log(`DB CONNECTED `);
     
 }
@@ -9,7 +9,7 @@ function chai(){     //this is named IIFE
 chai();
 
 
-( function aurcode(){    
+( function aurcode(){    //this is named IIFE
     console.log(`DB CONNECTED 2`)
 })();    //must use semicolon for ending the context of function otherwise next function doesn't work
 
