@@ -1,3 +1,5 @@
+//truthy and falsy values in javascript
+
 const userEmail = []
 
 if (userEmail) { //chceking useremail ke andar kuch he ya nhi
