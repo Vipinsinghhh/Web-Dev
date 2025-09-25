@@ -1,3 +1,5 @@
+//switch condition in js
+
 // switch (key) {              <- syntax of switch
 //     case value:
                                    
