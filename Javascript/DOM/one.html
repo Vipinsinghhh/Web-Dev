@@ -18,7 +18,7 @@
         <h2>Lorem ipsum dolor sit.</h2>
         <h2>Lorem ipsum dolor sit.</h2>
         <p>Lorem ipsum dolor sit amet.</p>
-        <input type="password" name="" id="">
+        <input type="password" name="" placeholder="enter" id="">
         <ul>
             <li class="list-item">one</li>
             <li class="list-item">two</li>
@@ -28,3 +28,159 @@
     </div>
 </body>
 </html>
+
+<!-- 
+Methods of select and manipulate elements:-
+
+console.dir(document) - for accessing all the data and methods of document, it includes all information.
+
+console.log(document) - gives html document
+
+console.log(document.baseURI) - gives base url of website
+
+console.log(document.links) - gives all the links of website
+
+document.getElementById("id").innerHTML = "<h1>VIPIN SINGH</h1>" - used for change the content of html
+
+document.getElementById("id").id - gives id
+
+document.getElementById("id").className - gives classname 
+
+document.getElementById("id").getAttribue("attributeName") - gives the value of attribute
+document.getElementById("id").getAttribute("id") - gives value of id or id name
+document.getElementById("id").getAttribute("class") - gives value of class or class name
+
+document.getElementById("id").setAttribute('attribute','value') - used for setting the attribute 
+document.getElementById("id").setAttribute('class','test') - example
+
+const title = document.getElementById("id") - stored document in variable with method
+
+--------------------------------------------------------------------------------------------------------------
+
+we can also apply styling in html document using html with the help of DOM:-
+title.style.backgroundColor = "green"
+title.style.padding = "15px"
+title.sstyle.borderRadius = "15px"
+
+--------------------------------------------------------------------------------------------------------------
+
+taking out content from HTML document:-
+title.innerText - gives content of html 
+title.textcontent - gives content along with hidden content of html which is hidden by applying style properties    
+title.innerHTML - gives whole content along with element or tags
+
+-------------------------------------------------------------------------------------------------------------
+
+document.getElementByClassName("classname") - another element selector by their class name 
+
+
+--------------------------------------query selectors---------------------------------------------------------
+
+(querySelector selects only one element which are on top)
+
+document.querySelector('input[type="password"]')
+<input type=​"password" name placeholder=​"enter" id fdprocessedid=​"xoj56c">​
+
+
+document.querySelector('.heading')          
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+
+document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+
+document.querySelector('h1')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+
+document.querySelector('h2')
+<h2>​Lorem ipsum dolor sit.​</h2>​
+
+
+document.querySelector('p:first-child')
+
+
+document.querySelector('p')
+<p>​Lorem ipsum dolor sit amet.​</p>​
+
+
+document.querySelector("ul")
+<ul>​<li class=​"list-item">​…​</li>​<li class=​"list-item">​…​</li>​<li class=​"list-item">​…​</li>​<li class=​"list-item">​…​</li>​</ul>​
+
+
+const myul = document.querySelector("ul")
+
+
+myul.querySelector('li')
+<li class=​"list-item">​::marker​"one"</li>​
+
+
+myul.querySelector('li').innerHTML = "five"
+
+
+myul.querySelector('li').style.backgroundColor = "green"
+
+
+const turngreen = myul.querySelector('li')
+
+
+turngreen.style.color = "green"
+
+
+-----------------------------------------querySelectorAll--------------------------------------------------
+
+(querySelectorAll gives data in nodelist, queryselector all me forEach loop method available hoti he)
+
+
+const tempLiList = document.querySelectorAll("ul")  
+
+tempLiList[0].style.color = "green"      - nodelist me index btana compulsury hota he
+
+document.querySelectorAll("h1")
+
+const myH1 = document.querySelectorAll("h1")
+
+myH1[0].style.color = "green"
+
+tempLiList.forEach(function (l) {
+    l.style.backgroundColor = "pink"
+})
+
+
+---------------------------------convert HTMLCollection to array for manipulation-------------------------------------
+
+document.getElementsByClassName("list-item")       -  selects class for manipulation it gives data in htmlCollection
+
+const tempClassList = document.getElementsByClassName("list-item")     - store all htmlCollection to variable for convenience
+
+Array.from(tempClassList)    - method of converting htmlCollection to array
+
+const convertedArray = Array.from(tempClassList)   - stored converted array in variable
+
+convertedArray.forEach(function (li){    - manipulating by using forEach loop
+    li.style.color = "orange"
+})
+
+---------------------------------------------manipulation on wikipedia javascript website-------------------------------------
+
+document.querySelectorAll("h3")      
+
+document.querySelectorAll(".mw-heading")   - selects class
+
+const MyHeadings = document.querySelectorAll(".mw-heading")     - manipulating all the selected class elements
+MyHeadings.forEach(function(h) {
+    h.style.color = "yellow"
+    
+})
+
+MyHeadings.forEach(function(h) {           - manipulating all the selected class elements
+    h.style.color = "yellow"
+    h.style.backgroundColor = "green"
+    h.style.padding = "15px"
+    h.style.borderRadius = "15px"
+    h.innerText = "VIPIN DON"
+    
+})
+
+-->
