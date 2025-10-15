@@ -10,17 +10,17 @@
     
 </body>
 <script>
-    const div = document.createElement('div')
+    const div = document.createElement('div')   //storing whole div into variable
     console.log(div);
-    div.className = "main"
-    div.id = Math.round(Math.random() * 10 + 1)
-    div.setAttribute("title", "generated title")
-    div.style.backgroundColor = "green"
-    div.style.padding = "12px"
+    div.className = "main"   //inserting class into element  
+    div.id = Math.round(Math.random() * 10 + 1)    //round of predefined method
+    div.setAttribute("title", "generated title")   //method for setting attribute on the element
+    div.style.backgroundColor = "green"    //prebuild method of inserting background color into element
+    div.style.padding = "12px"             //prebuild method of inserting padding color into element
     // div.innerText = "Chai aur code"
-    const addText = document.createTextNode("Chai aur code")
-    div.appendChild(addText)
+    const addText = document.createTextNode("Chai aur code")   //creating text node and meriging it to the document
+    div.appendChild(addText)     //appentchild used for add or insert node or element in parent
 
-    document.body.appendChild(div)
+    document.body.appendChild(div)   //it is used for showng all changes to the display or body
 </script>
 </html>
