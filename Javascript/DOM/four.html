@@ -12,6 +12,7 @@
     </ul>
 </body>
 <script>
+    //Add new li
     function addLanguage(langName){
         const li = document.createElement('li');
         li.innerHTML = `${langName}`
@@ -19,6 +20,18 @@
     }
     addLanguage("python")
     addLanguage("typescript")
+
+                //or
+
+    function addOptiLanguage(langName){
+        const li = document.createElement("li");
+        const addText = document.createTextNode(langName);
+        li.appendChild(addText);
+        document.querySelector(".language").appendChild(li);
+    }
+    addOptiLanguage('ruby')
+    
+                 //or
 
     function addOptiLanguage(langName){
         const li = document.createElement('li');
@@ -30,14 +43,20 @@
     //Edit
     const secondLang = document.querySelector("li:nth-child(2)")
     console.log(secondLang);
-    //secondLang.innerHTML = "Mojo"
+    secondLang.innerHTML = "Mojo"
     const newli = document.createElement('li')
     newli.textContent = "Mojo"
     secondLang.replaceWith(newli)
 
+    //Edit
+    const Firstlang = document.querySelector("li:nth-child(1)")
+    const Firstnewli = document.createElement("li")
+    Firstnewli.textContent = "Typescript"
+    Firstlang.replaceWith(Firstnewli)
+
     //edit
     const firstLang = document.querySelector("li:first-child")
-    firstLang.outerHTML = '<li>TypeScript</li>'
+    firstLang.outerHTML = '<li>TypeScripttttttt</li>'
 
     //remove
     const lastLang = document.querySelector('li:last-child')
