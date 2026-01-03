@@ -5,15 +5,66 @@ import './App.css'
 
 function App() {
 
-  let [counter, setcounter] = useState(15)
+  let [counter, setcounter] = useState(15)       //yha let ki jgh const bhi variable loge toh bhi value change kar skte he kyuki ye ek array he 
 
   //let counter = 15
 
   const addValue=()=>{
-    if(counter === 20){
+    if(counter === 50){
       return;
     }
-    setcounter(counter+1)
+    
+    // setcounter((prevCounter)=>{
+    //   counter = prevCounter+1;
+    //   if(counter > 50){
+    //     counter = 50;
+    //   }
+    //   return counter;
+    // })
+    // setcounter((prevCounter)=>{
+    //   counter = prevCounter+1;
+    //   if(counter > 50){
+    //     counter = 50;
+    //   }
+    //   return counter;
+    // })
+    // setcounter((prevCounter)=>{
+    //   counter = prevCounter+1;
+    //   if(counter > 50){
+    //     counter = 50;
+    //   }
+    //   return counter;
+    // })
+    // setcounter((prevCounter)=>{
+    //   counter = prevCounter+1;
+    //   if(counter > 50){
+    //     counter = 50;
+    //   }
+    //   return counter;
+    // }) 
+    // setcounter((prevCounter)=>{
+    //   counter = prevCounter+1;
+    //   if(counter > 50){
+    //     counter = 50;
+    //   }
+    //   return counter;
+    // }) 
+     //this is very huge code and in scaling the product might be create errors instead of this use ->      
+     
+
+     //same work with this code 
+     setcounter(prevCounter => Math.min(prevCounter + 1, 50));
+     setcounter(prevCounter => Math.min(prevCounter + 1, 50));
+     setcounter(prevCounter => Math.min(prevCounter + 1, 50));
+     setcounter(prevCounter => Math.min(prevCounter + 1, 50));
+     setcounter(prevCounter => Math.min(prevCounter + 1, 50));
+
+     //if you dont want to stop the updation of counter value after 50
+    //  setcounter(prevCounter => prevCounter+1)
+    //  setcounter(prevCounter => prevCounter+1)
+    //  setcounter(prevCounter => prevCounter+1)
+    //  setcounter(prevCounter => prevCounter+1)
+    //  setcounter(prevCounter => prevCounter+1) 
   }
 
   const removeValue=()=>{
