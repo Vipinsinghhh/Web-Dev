@@ -33,7 +33,7 @@
     //---these are the most imp events---
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
-    // clientX, clientY, screenX, screenY
+    // clientX, clientY, screenX, screenY, offsetX, offsetY
     // altkey, ctrlkey, shiftkey, keyCode
 
     //---------Event propagation--------------
@@ -44,15 +44,22 @@
     document.getElementById('owl').addEventListener('click', function(e){
         console.log("owl clicked");
         e.stopPropagation()
-    }, false)
+    }, false) // yha par ye false value decides the event propogation phase -- Capturing Phase(True) (Top → Bottom), Bubbling Phase(false) (Bottom → Top).
     
     document.getElementById('google').addEventListener('click',function(e){
-        e.preventDefault();
-        e.stopPropagation()
+        e.preventDefault();  //preventDefault() is a method that stops the default action of an event from occurring, without stopping event propagation.
+        e.stopPropagation()  //stopPropagation() stops the further propagation of the current event in the capturing and bubbling phases.
         console.log("google clicked");
     }, false)
    
     //--------Project- Remove that image which is clicked by the user-----------
+
+    // document.querySelector("#images").addEventListener("click",(e)=>{
+    //     console.log(e.target.parentNode);
+    //     let removeIt = e.target.parentNode;
+    //     removeIt.remove(); 
+    // }) //the problem in this is when i clicked any where in the page all the list removed
+
 
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
