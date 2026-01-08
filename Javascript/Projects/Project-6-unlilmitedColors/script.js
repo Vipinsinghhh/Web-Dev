@@ -11,11 +11,11 @@ const randomColor = function ran() {
 
 // console.log(randomColor())
 
-//generate a random color
+//optimised and scalable code
 
 let intervalId;
 const startChangingColor = function () {
-  if (!intervalId) {
+  if (!intervalId) {   //ye condition isliye lgai taki multiple intervals creates na ho
     intervalId = setInterval(changeBgColor, 1000);
   }
 
@@ -32,19 +32,26 @@ document.querySelector('#start').addEventListener('click', startChangingColor);
 
 document.querySelector('#stop').addEventListener('click', stopChangingColor);
 
+
+
+
 //----------------my version--------------------------------
 
-// const start = document.querySelector('#start')
-// const stop = document.querySelector('#stop')
+//in this code multiple setintervals toh create ho jaege par stop karne par sare ek ba me clear ho jaege 
 
-// start.addEventListener('click',function(){
-//     let IntervalId = setInterval(function(){
-//         document.body.style.backgroundColor = randomColor()
-// },1000)
+//this code is note optimised and scalable
 
-// stop.addEventListener('click',function(){
-//     clearInterval(IntervalId)
-// })
+const start = document.querySelector('#start')
+const stop = document.querySelector('#stop')
 
-// })
+start.addEventListener('click',function(){
+    let IntervalId = setInterval(function(){
+        document.body.style.backgroundColor = randomColor()
+},1000)
+
+stop.addEventListener('click',function(){
+    clearInterval(IntervalId)
+})
+
+})
 
