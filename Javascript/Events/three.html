@@ -11,12 +11,14 @@
     <button id="stop">Stop</button>
 </body>
 <script>
-    //--------------seyInterval and clearInterval function-----------------
-    const sayDate = function(str){
+    //--------------setInterval and clearInterval function-----------------
+    //setInterval and clearInterval are web APIs
+    
+    const sayDate = function(str){  //ye "str" parameter he jo "hi" argument ko receive kar rha he
         console.log(str, Date.now());
     }
 
-    const intervalId = setInterval(sayDate, 1000, "hi")       //yha "hi" parameter pass kiya he
+    const intervalId = setInterval(sayDate, 1000, "hi")       //yha "hi" argument pass kiya he, setInterval me hum argument bhi pass kar skte he
     clearInterval(intervalId)       //for stop interval function
 
 
